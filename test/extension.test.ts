@@ -13,14 +13,14 @@ import * as vscode from 'vscode';
 import * as myExtension from '../extension';
 
 // Defines a Mocha test suite to group tests of similar kind together
-suite("Word Count Tests", () => {
+suite("Character Count Tests", () => {
 
 	// Defines a Mocha unit test
-	test("Word Count", (done) => {
-		let testWordCounter = new myExtension.WordCounter();
+	test("Character Count", (done) => {
+		let testCharacterCounter = new myExtension.CharacterCounter();
 
 		vscode.workspace.openTextDocument(path.join(__dirname, '..', '..', 'vsc-extension-quickstart.md')).then((document) => {
-			assert.equal(testWordCounter._getWordCount(document), 254);
+			assert.equal(testCharacterCounter._getCharacterCount(document), 254);
 			done();
 		}, (error) => {
 			assert.fail(error);

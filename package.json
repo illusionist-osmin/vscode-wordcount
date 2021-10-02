@@ -1,12 +1,9 @@
 {
-	"name": "wordcount",
-	"displayName": "Word Count",
-	"version": "0.1.0",
-	"publisher": "ms-vscode",
-	"description": "Markdown Word Count Example - a status bar contribution that reports out the number of words in a Markdown document as you interact with it.",
-	"author": {
-		"name": "seanmcbreen"
-	},
+	"name": "charcount",
+	"displayName": "Character Count",
+	"version": "0.1.1",
+	"publisher": "illusionist-osmin",
+	"description": "Markdown Character Count Example - a status bar contribution that reports out the number of chars without whitespaces in a Markdown document as you interact with it.",
 	"categories": [
 		"Other"
 	],
@@ -21,7 +18,7 @@
 	],
 	"repository": {
 		"type": "git",
-		"url": "https://github.com/Microsoft/vscode-wordcount.git"
+		"url": "https://github.com/illusionist-osmin/vscode-wordcount"
 	},
 	"engines": {
 		"vscode": "0.10.x"
@@ -32,7 +29,7 @@
 		"compile": "node ./node_modules/vscode/bin/compile -watch -p ./"
 	},
 	"devDependencies": {
-		"vscode": "0.10.x",
-		"typescript": "^1.6.2"
+		"typescript": "^1.8.10",
+		"vscode": "0.10.x"
 	}
 }
